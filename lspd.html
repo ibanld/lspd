@@ -15,7 +15,7 @@
     <header><nav class="navbar navbar-expand-md navbar-dark mainColor top-fixed">
       <a class="navbar-brand" href="./index.html">
         <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Los Santos Poice Department
+        Los Santos Police Department
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,33 +38,351 @@
       <div class="container">
         <div class="row mt-5" style="box-shadow: 10px 10px 30px 15px rgba(0,0,0,0.5);
         ">
-          <div class="col-9 col-md-1 m-2">
+          <div class="col-3 col-md-3 mt-2">
 <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ciudadanos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Vehiculos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Añadir Civil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Añadir Vehiculo</a>
   </li>
 </ul>
 </div>
 <!-- Tab panes -->
-<div class="tab-content col-3 col-md-10 m-2">
-  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-</div>
+<div class="tab-content col-9 col-md-8 mt-3">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <ul class="list-unstyled">
+      <li class="media">
+        <img src="..." class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Nombre Apellido</h5>
+          <p><ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Fecha de Nacimiento:</li>
+                <li class="list-group-item">Altura:</li>
+                <li class="list-group-item">Empleo:</li>
+                <li class="list-group-item">Teléfono:</li>
+              </ul>
+            </li>
+            <li class="list-group-item">Licencias
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Automovil</li>
+                <li class="list-group-item">Motocicleta</li>
+                <li class="list-group-item">Camión</li>
+                <li class="list-group-item">Avión</li>
+                <li class="list-group-item">Armas</li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Acceso Web:</li>
+                <li class="list-group-item">Busca y Captura</li>
+                
+              </ul>
+            </li>
+          </ul></p>
+         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
+        </div>
+      </li>
+      <li class="media">
+        <img src="..." class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Nombre Apellido</h5>
+          <p><ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Fecha de Nacimiento:</li>
+                <li class="list-group-item">Altura:</li>
+                <li class="list-group-item">Empleo:</li>
+                <li class="list-group-item">Teléfono:</li>
+              </ul>
+            </li>
+            <li class="list-group-item">Licencias
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Automovil</li>
+                <li class="list-group-item">Motocicleta</li>
+                <li class="list-group-item">Camión</li>
+                <li class="list-group-item">Avión</li>
+                <li class="list-group-item">Armas</li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Acceso Web:</li>
+                <li class="list-group-item">Busca y Captura</li>
+                
+              </ul>
+            </li>
+          </ul></p>
+         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
+        </div>
+      </li>
+      
+      <li class="media">
+        <img src="..." class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Nombre Apellido</h5>
+          <p><ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Fecha de Nacimiento:</li>
+                <li class="list-group-item">Altura:</li>
+                <li class="list-group-item">Empleo:</li>
+                <li class="list-group-item">Teléfono:</li>
+              </ul>
+            </li>
+            <li class="list-group-item">Licencias
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Automovil</li>
+                <li class="list-group-item">Motocicleta</li>
+                <li class="list-group-item">Camión</li>
+                <li class="list-group-item">Avión</li>
+                <li class="list-group-item">Armas</li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Acceso Web:</li>
+                <li class="list-group-item">Busca y Captura</li>
+                
+              </ul>
+            </li>
+          </ul></p>
+         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <ul class="list-group list-group">Vehiculos
+      <li class="list-group-item">
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">Propietario </li>
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">Modelo:</li>
+          <li class="list-group-item">Matricula:</li>
+          <li class="list-group-item">Color:</li>
+        </ul>
+      </li>
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Modelo-Matricula</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Propietario </li>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Modelo:</li>
+        <li class="list-group-item">Matricula:</li>
+        <li class="list-group-item">Color:</li>
+      </ul>
+    </li>
+    <li class="list-group-item">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Modelo-Matricula</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </ul>
+</li>
+<li class="list-group-item">
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">Propietario </li>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">Modelo:</li>
+      <li class="list-group-item">Matricula:</li>
+      <li class="list-group-item">Color:</li>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Modelo-Matricula</p>
+      </div>
+    </div>
+  </li>
+</ul>
+</ul>
+</li>
+<li class="list-group-item">
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">Propietario </li>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">Modelo:</li>
+      <li class="list-group-item">Matricula:</li>
+      <li class="list-group-item">Color:</li>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Modelo-Matricula</p>
+      </div>
+    </div>
+  </li>
+</ul>
+</ul>
+</li>
+  </div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+    <legend>Añadir nueva ficha de civil</legend>
+    <form>
+      <div class="form-group row">
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="form-group row">
+      <div class="col-12 col-md-6">
+        <input type="date" class="form-control" placeholder="Fecha de Nacimiento">
+      </div>
+      <div class="col-12 col-md-6">
+        <input type="number" class="form-control" placeholder="Altura (cm)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12 col-md-6">
+        <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Teléfono">
+      </div>
+      <div class="col-12 col-md-6">
+        <input type="text" class="form-control" placeholder="Empleo">
+      </div>
+    </div>
+    
+    <div class="form-group row">
+        <div class="col-sm-2">Licencias</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Automovil
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Motocicleta
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Camión
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Barco
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Avión
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Armas
+            </label>
+            
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2">Permisos:</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Acceso Web
+            </label>
+            
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Busca y Captura
+            </label>
+            
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <label for="exampleFormControlFile1">Subir foto</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+ 
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+      </div>
+    </form>
+  </div>     
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+    <form><legend>Añadir Vehiculo</legend>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Propietario">
+        </div>
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Matricula">
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Modelo">
+        </div>
+        <div class="col-12 col-md-6">
+          <input type="text" class="form-control" placeholder="Color">
+        </div>
+      </div>
+      <div class="form-group mt-2">
+        <label for="exampleFormControlFile1">Adjuntar imagen</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group mt-2">
+      <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
+    </form>
+  </div>
+  </div>
 
-</div>
-</div>
-    <footer></footer>
+
+   
         <!-- Optional JavaScript -->
         <script src="./app.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
