@@ -1,0 +1,15 @@
+/* color palette link: https://www.materialpalette.com/blue/indigo */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,500;1,700&display=swap');
+.mainColor{
+    background-color: #2196f3;
+    box-shadow: 0px 10px 5px 1px rgba(0,0,0,0.50);
+}
+
+/*footer{
+    height: 5vh;
+    width: 100%;
+    bottom:0vh;
+    position: fixed;
+    background-color: #2196f3;
+    box-shadow: 0px -15px 5px 0px rgba(0,0,0,0.5);
+}*/
