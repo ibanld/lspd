@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/logo.png" type="image/png">
     <title>LSPD - California</title>
   </head>
@@ -26,10 +27,10 @@
             <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Denuncias</a>
+            <a class="nav-link" href="./denuncias.html">Denuncias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Noticias</a>
+            <a class="nav-link" href="./noticias.html">Noticias</a>
           </li>
     </nav>
     </header>
@@ -52,11 +53,30 @@
   <li class="nav-item">
     <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Añadir Vehiculo</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="denuncias-tab" data-toggle="tab" href="#denuncias" role="tab" aria-controls="denuncias" aria-selected="false">Ver Denuncias</a>
+  </li>
 </ul>
 </div>
 <!-- Tab panes -->
 <div class="tab-content col-9 col-md-8 mt-3">
   <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <form class="card card-sm">
+      <div class="card-body row no-gutters align-items-center">
+          <div class="col-auto">
+              <i class="fas fa-search h4 text-body"></i>
+          </div>
+          <!--end of col-->
+          <div class="col">
+              <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Buscar">
+          </div>
+          <!--end of col-->
+          <div class="col-auto">
+              <button class="btn btn-lg btn-outline-primary" type="submit">Search</button>
+          </div>
+          <!--end of col-->
+      </div>
+  </form><br/>
     <ul class="list-unstyled">
       <li class="media">
         <img src="..." class="mr-3" alt="...">
@@ -82,7 +102,7 @@
             </li>
             <li class="list-group-item">
               <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">Acceso Web:</li>
+                <li class="list-group-item">Acceso Web</li>
                 <li class="list-group-item">Busca y Captura</li>
                 
               </ul>
@@ -378,6 +398,93 @@
       <button type="submit" class="btn btn-success">Guardar</button>
     </div>
     </form>
+  </div>
+  <div class="tab-pane" id="denuncias" role="tabpanel" aria-labelledby="denuncias-tab" >
+    <legend>Denuncias</legend>
+    <div class="denuncia">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Denunciante: </label>
+      </div>
+      <div class="col-12 col-md-6 ml-3">nombre y apellido</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Datos: </label>
+      </div>
+      <div class="col-12 col-md-4">telefono</div>
+      <div class="col-12 col-md-2 ml-3">fecha</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Descripción: </label>
+      </div>
+      <div class="col-12 col-md-8 ml-1">
+        <p>descripcion</p>
+        <p>descripcion</p>
+      </div>
+    </div>
+    <div class="row mb-3 mx-auto">
+    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+  </div>
+  <hr>
+  </div>
+  <div class="denuncia">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Denunciante: </label>
+      </div>
+      <div class="col-12 col-md-6 ml-3">nombre y apellido</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Datos: </label>
+      </div>
+      <div class="col-12 col-md-4">telefono</div>
+      <div class="col-12 col-md-2 ml-3">fecha</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Descripción: </label>
+      </div>
+      <div class="col-12 col-md-8 ml-1">
+        <p>descripcion</p>
+        <p>descripcion</p>
+      </div>
+    </div>
+    <div class="row mb-3 mx-auto">
+    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+  </div>
+  <hr>
+  </div>
+  <div class="denuncia">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Denunciante: </label>
+      </div>
+      <div class="col-12 col-md-6 ml-3">nombre y apellido</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Datos: </label>
+      </div>
+      <div class="col-12 col-md-4">telefono</div>
+      <div class="col-12 col-md-2 ml-3">fecha</div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12 col-md-3">
+        <label class="input-group-text">Descripción: </label>
+      </div>
+      <div class="col-12 col-md-8 ml-1">
+        <p>descripcion</p>
+        <p>descripcion</p>
+      </div>
+    </div>
+    <div class="row mb-3 mx-auto">
+    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+  </div>
+  <hr>
+  </div>
   </div>
   </div>
 
