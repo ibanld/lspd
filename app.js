@@ -21,11 +21,14 @@ $(document).ready(function(){
     });
 
     $('.borrarDenuncia').click(function(){
+        
         $('#alertDenuncia').toggleClass('d-block');
         setTimeout(function(){
             $('#alertDenuncia').toggleClass('d-block');
         }, 4000);
+        
     });
+
     $('#btnDelitos').click(function(){
         $('#alertDelito').toggleClass('d-block');
         setTimeout(function(){
