@@ -35,10 +35,20 @@
     </nav>
     </header>
     <body>
+      
+      
       <!-- Nav tabs -->
       <div class="container">
-        <div class="row mt-5" style="box-shadow: 10px 10px 30px 15px rgba(0,0,0,0.5);
-        ">
+        <div id="alertFicha" class="alert alert-success d-none" role="alert">
+          La ficha se ha creado correctamente.
+        </div>
+        <div id="alertDenuncia" class="alert alert-warning d-none" role="alert">
+          La denuncia se ha eliminado correctamente.
+        </div>
+        <div id="alertDelito" class="alert alert-info d-none" role="alert">
+          Se han añadido los delitos correctamente
+        </div>
+<div class="row mt-5" style="box-shadow: 10px 10px 30px 15px rgba(0,0,0,0.5);">
           <div class="col-3 col-md-3 mt-2">
 <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
   <li class="nav-item">
@@ -108,7 +118,8 @@
               </ul>
             </li>
           </ul></p>
-         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
+         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="">Modificar Ficha</a> 
+          <a class="btn btn-warning" type="button" data-toggle="modal" data-target="#delitoModal">Añadir Delito</a></p>
         </div>
       </li>
       <li class="media">
@@ -141,8 +152,9 @@
               </ul>
             </li>
           </ul></p>
-         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
-        </div>
+          <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="">Modificar Ficha</a> 
+            <a class="btn btn-warning" type="button" data-toggle="modal" data-target="#delitoModal">Añadir Delito</a></p>
+                  </div>
       </li>
       
       <li class="media">
@@ -175,8 +187,9 @@
               </ul>
             </li>
           </ul></p>
-         <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="#loginModal">Modificar Fichar</a> <a class="btn btn-danger" type="button" data-toggle="modal" data-target="#loginModal">Añadir Delito</a></p>
-        </div>
+          <p><a class="btn btn-info" type="button" data-toggle="modal" data-target="">Modificar Ficha</a> 
+            <a class="btn btn-warning" type="button" data-toggle="modal" data-target="#delitoModal">Añadir Delito</a></p>
+                  </div>
       </li>
       
     </ul>
@@ -367,7 +380,7 @@
       </div>
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-success">Guardar</button>
+          <button id="crearFicha" type="button" class="btn btn-success">Guardar</button>
         </div>
       </div>
     </form>
@@ -395,7 +408,7 @@
         <input type="file" class="form-control-file" id="exampleFormControlFile1">
       </div>
       <div class="form-group mt-2">
-      <button type="submit" class="btn btn-success">Guardar</button>
+        <button id="crearFicha2" type="button" class="btn btn-success">Guardar</button>
     </div>
     </form>
   </div>
@@ -425,7 +438,7 @@
       </div>
     </div>
     <div class="row mb-3 mx-auto">
-    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+    <button type="button" class="btn btn-danger borrarDenuncia">Eliminar Denuncia</button>
   </div>
   <hr>
   </div>
@@ -453,7 +466,7 @@
       </div>
     </div>
     <div class="row mb-3 mx-auto">
-    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+    <button type="button" class="btn btn-danger borrarDenuncia">Eliminar Denuncia</button>
   </div>
   <hr>
   </div>
@@ -481,20 +494,119 @@
       </div>
     </div>
     <div class="row mb-3 mx-auto">
-    <button type="button" class="btn btn-danger">Eliminar Denuncia</button>
+    <button type="button" class="btn btn-danger borrarDenuncia">Eliminar Denuncia</button>
   </div>
   <hr>
   </div>
   </div>
   </div>
 
+<!-- Delitos modal -->
 
+<div id="delitoModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Código de Penal de la Ciudad de Los Santos y el Condado de Blaine</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+        <h4>Sección 1</h4>
+        <ul class="list-group">
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+        </ul>
+        <h4>Sección 2</h4>
+        <ul class="list-group">
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+        </ul>
+        <h4>Sección 3</h4>
+        <ul class="list-group">
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+        </ul>
+        <h4>Sección 4</h4>
+        <ul class="list-group">
+          <li class="list-item">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label" for="defaultCheck1">
+            Articulo Codigo Penal
+          </label>
+          </li>
+        </ul>
+        <hr>
+        <button id="btnDelitos" class="btn btn-danger btn-block" data-dismiss="modal">Añadir Delitos</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
    
-        <!-- Optional JavaScript -->
-        <script src="./app.js"></script>
+        
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       </body>
+      <!-- Optional JavaScript -->
+      <script src="./app.js"></script>
 </html>
